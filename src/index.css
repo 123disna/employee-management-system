@@ -1,13 +1,142 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero-main-div{
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7)), url('https://cloud.squidex.io/api/assets/sorwe-cms/ab723ac3-dc60-4364-adcc-660f45644b56');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  z-index: -1;
 }
+
+.hero-main-div h1{
+  z-index: 10;
+  color: azure;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Footer {
+  padding: 2rem 0;
+  margin-top: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000;
+  color: #e1e1e1;
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+}
+
+.ft-1 span {
+  color: #d550f6;
+}
+
+.ft-1 p {
+  padding: 0rem 5rem 0.8rem 0;
+  font-weight: 500;
+}
+
+.footer-icons .fa-icon {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #d550f6;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  transition: background 0.6s, color 0.6s;
+}
+
+.footer-icons .fa-icon:hover {
+  background: #d550f6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Footer h5 {
+  color: #d550f6;
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.06rem;
+}
+
+.ft-3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+}
+
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+.Last-footer {
+  background: #43033c;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.Last-footer p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:#e1e1e1;
+}
+
+.support-img{
+  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7));
+
+}
+
+.login_background{
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7)), url('https://www.paymentsjournal.com/wp-content/uploads/2022/08/4921280-scaled.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.admin_background{
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7)), url('https://assets-us-01.kc-usercontent.com/469992e5-7cbd-0032-ead4-f2db9237053a/e802562c-78aa-4370-b157-3c24e7dda034/2021-02-17_signs-of-low-employee-engagement.jpg?auto=format&q=75');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.employee_background{
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7)), url('https://assets-us-01.kc-usercontent.com/469992e5-7cbd-0032-ead4-f2db9237053a/e802562c-78aa-4370-b157-3c24e7dda034/2021-02-17_signs-of-low-employee-engagement.jpg?auto=format&q=75');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  z-index: -1;
+}
+

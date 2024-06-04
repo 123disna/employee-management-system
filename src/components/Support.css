@@ -1,0 +1,76 @@
+.left-div{
+    flex-basis: 40%;   
+} 
+
+.left-div h3{
+    margin-bottom: 15px;
+}
+
+.right-div{
+    flex-basis: 50%;
+}
+
+.msg_icon{
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.send-msg{
+    text-align: justify;
+    font-size: 13px;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.m-icons, .p-icons, .l-icons{
+    width: 16px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.email-ad, .phone-num, .address{
+    font-size: 13px;
+}
+
+.address{
+    max-width: 200px;
+}
+
+.y-name, .y-num, .y-msg{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.name-txt, .num-txt, .msg-txt{
+    font-size: 13px;
+    background-color: rgb(252, 216, 252);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.right-div div{
+    display: flex;
+}
+
+.sub-btn{
+    background-color: rgb(100, 5, 89);
+    color: white;
+    font-size: 13px;
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.sub-btn img{
+    width: 20px;
+    margin-left: 10px;
+} 
+
