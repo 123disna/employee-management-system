@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import { Link as ScrollLink, Element, scroller } from 'react-scroll';
 
 const Navigation = () => {
-  const navigate = useNavigate();
+  const navigate=useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 
   const handleLogin = () => {
@@ -15,6 +16,14 @@ const Navigation = () => {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
+  };
+  const scrollToWithOffset = (id, offset) => {
+    scroller.scrollTo(id, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+      offset: offset
+    });
   };
 
   return (
@@ -36,20 +45,18 @@ const Navigation = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a className="navbar-brand" href="#" style={{ marginLeft: '20px' }}>
+            <RouterLink to="/" className="navbar-brand" style={{ marginLeft: '20px' }}>
               EMS Company
-            </a>
+            </RouterLink>
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
-                </a>
+                <ScrollLink to="home" className="nav-link" spy={true} smooth={true} duration={200} offset={-50}>Home <span className="sr-only">(current)</span></ScrollLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#story">Story</a>
+                <ScrollLink to="story" className="nav-link" spy={true} smooth={true} duration={200} offset={-80}>Story</ScrollLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#support">Support</a>
+                <ScrollLink to="support" className="nav-link" spy={true} smooth={true} duration={200} offset={-80}>Support</ScrollLink>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
