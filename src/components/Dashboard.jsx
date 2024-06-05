@@ -1,39 +1,47 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.getItem('token');
+    navigate('/loginform');
+  };
+
   return (
-    <Container fluid>
-      <Row className="mt-3">
-        <Col md={2} className="bg-light sidebar">
+    <Container fluid className="full-height-container">
+      <Row className="full-height-row">
+        <Col md={2} className="sidebar full-height-col" style={{ backgroundColor: '#430353' }}>
           <div className="d-flex flex-column align-items-center pt-3">
-            <h5>Dashboard</h5>
+            <h5 style={{ color: '#fff' }}>Dashboard</h5>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link active" href="/employees">
+                <a className="nav-link active" href="/employees" style={{ color: '#fff' }}>
                   Employees
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/add-employee">
+                <a className="nav-link" href="/add-employee" style={{ color: '#fff' }}>
                   Add Employee
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/addAdminForm">
+                <a className="nav-link" href="/addAdminForm" style={{ color: '#fff' }}>
                  Add Admin
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <button className="nav-link" onClick={handleLogout} style={{ color: '#fff', border: 'none', background: 'none', cursor: 'pointer' }}>
                   Logout
-                </a>
+                </button>
               </li>
             </ul>
           </div>
         </Col>
-        <Col md={10} className="content">
-          <Row>
+        <Col md={10} className="content full-height-col" style={{backgroundColor:'#e49ef6'}}>
+          <Row className='mt-3'>
             <Col md={12} lg={4} className="mb-4">
               <Card>
                 <Card.Body>
@@ -64,5 +72,5 @@ const Dashboard = () => {
     </Container>
   ); 
 };
- 
+
 export default Dashboard;

@@ -132,11 +132,34 @@ body {
 .employee_background{
   width: 100vw;
   height: 100vh;
-  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7)), url('https://assets-us-01.kc-usercontent.com/469992e5-7cbd-0032-ead4-f2db9237053a/e802562c-78aa-4370-b157-3c24e7dda034/2021-02-17_signs-of-low-employee-engagement.jpg?auto=format&q=75');
+  background:linear-gradient(rgba(19, 0, 19, 0.7), rgba(7, 0, 0, 0.7)), url('https://media.licdn.com/dms/image/D4E12AQFb0c7cGvL0CQ/article-cover_image-shrink_720_1280/0/1683724533950?e=2147483647&v=beta&t=zKuNH5HyaDVQq3XP4XoXbhUDTv_Doex7ihruvERFaPo');
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   z-index: -1;
 }
+
+.list_background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #e49ef6;
+  z-index: -1;
+}
+
+html, body, #root, .full-height-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-height-row {
+  height: 100vh;
+}
+
+.full-height-col {
+  height: 100%;
+  overflow-y: auto;
+}
+
 
